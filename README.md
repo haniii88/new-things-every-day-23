@@ -1,2 +1,16 @@
-# new-things-every-day-23
-New things every day #23
+from datetime import datetime
+import random
+
+def new_things_every_day_23():
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    msg = random.choice([
+        "Commit today — keep the momentum alive.",
+        "Progress happens one line at a time.",
+        "Your streak is your strength — don’t break it.",
+        "Small daily actions lead to big results.",
+        "Code today so tomorrow thanks you."
+    ])
+    print(f"[#23] {msg} — {now}")
+
+if __name__ == "__main__":
+    new_things_every_day_23()
